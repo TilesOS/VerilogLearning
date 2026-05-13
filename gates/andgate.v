@@ -3,6 +3,6 @@ module andgate (
     input b,
     output out
 );
-    assign out = a & b; // can also be written as: out = a && b;
+    assign out = a & b; // bitwise shown, logical written as: out = a && b;
 
 endmodule
