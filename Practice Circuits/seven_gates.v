@@ -1,4 +1,4 @@
-module seven_gates( 
+module seven_gates(
     input a, b,
     output out_and,
     output out_or,
