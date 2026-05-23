@@ -4,6 +4,7 @@ module bitequality (
     output z
 );
 
-    assign z = (A == B);
+    assign z = (A == B); /* waveforms still worked with {A == B}
+                            but learned thats not really proper syntax */
 
 endmodule
