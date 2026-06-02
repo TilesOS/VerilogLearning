@@ -1,0 +1,13 @@
+module portsbyposition (
+    input a,
+    input b,
+    input c,
+    input d,
+    output out1,
+    output out2
+);
+
+    mod_a instance1 (out1, out2, a, b, c, d); /* by position left-to-right matches:
+    mod_a (output, output, input, input, input, input) */
+
+endmodule
