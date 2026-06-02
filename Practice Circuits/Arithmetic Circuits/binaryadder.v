@@ -1,4 +1,4 @@
-module binaryadder(
+module binaryadder (
     input [2:0] a, b,
     input cin,
     output [2:0] cout,
@@ -29,6 +29,14 @@ module binaryadder(
         .cout(cout[2])
     );
 
-    assign sum[2:0] = {sum[2], sum[1], sum[0]};
-    assign cout[2:0] = {cout[2], cout[1], cout[0]};
+endmodule
+
+module add1 (
+    input a, b, cin,
+    output cout, sum
+);
+
+    assign cout = (a & b) | (a & cin) | (b & cin);
+    assign sum = (a ^ b ^ cin);
+
 endmodule
